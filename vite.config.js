@@ -17,7 +17,7 @@ const DEFAULT_OPTIONS = {
         params: {
           overrides: {
             cleanupNumericValues: false,
-            removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+            removeViewBox: false,
           },
           cleanupIDs: {
             minify: false,
@@ -36,31 +36,23 @@ const DEFAULT_OPTIONS = {
     ],
   },
   png: {
-    // https://sharp.pixelplumbing.com/api-output#png
-    quality: 100,
+    quality: 30, // Adjusted quality to a lower value
   },
   jpeg: {
-    // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 100,
+    quality: 75, // Adjusted quality to a lower value
   },
   jpg: {
-    // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 100,
+    quality: 75, // Adjusted quality to a lower value
   },
   tiff: {
-    // https://sharp.pixelplumbing.com/api-output#tiff
-    quality: 100,
+    quality: 75, // Adjusted quality to a lower value
   },
-  // gif does not support lossless compression
-  // https://sharp.pixelplumbing.com/api-output#gif
   gif: {},
   webp: {
-    // https://sharp.pixelplumbing.com/api-output#webp
-    lossless: true,
+    quality: 75, // Adjusted quality to a lower value
   },
   avif: {
-    // https://sharp.pixelplumbing.com/api-output#avif
-    lossless: true,
+    quality: 75, // Adjusted quality to a lower value
   },
   cache: false,
   cacheLocation: undefined,
