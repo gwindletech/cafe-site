@@ -1,26 +1,29 @@
 import { motion } from "framer-motion";
-import servicesPic1 from "../../assets/services-pic1.png";
-import servicesPic2 from "../../assets/services-pic2.png";
-import servicesPic3 from "../../assets/services-pic3.png";
+import servicesPicCoffeeMachine from "../../assets/services-pic-coffee-machine.png";
+import servicesPicMilkshake from "../../assets/services-pic-milkshake.png";
+import servicesPicFood from "../../assets/services-pic-food.png";
 
 const servicesData = [
   {
     id: 1,
-    image: servicesPic1,
+    height: 40,
+    image: servicesPicCoffeeMachine,
     title: "Coffee",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus elit, faucibus eu congue in, aliquet a nulla. Suspendisse sed tellus enim.",
   },
   {
     id: 2,
-    image: servicesPic2,
+    height: 40,
+    image: servicesPicMilkshake,
     title: "Milkshakes",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus elit, faucibus eu congue in, aliquet a nulla. Suspendisse sed tellus enim.",
   },
   {
     id: 3,
-    image: servicesPic3,
+    height: 40,
+    image: servicesPicFood,
     title: "Food",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus elit, faucibus eu congue in, aliquet a nulla. Suspendisse sed tellus enim.",
@@ -93,7 +96,7 @@ function Services() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.6 }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
       >
         {servicesData.map((service) => (
@@ -105,13 +108,12 @@ function Services() {
             <img
               src={service.image}
               alt={service.title}
-              className="h-40 img-shadow2 max-w-[200px] mx-auto hover:scale-110 duration-300 cursor-pointer"
+              className={`h-${service.height} img-shadow2 max-w-[200px] mx-auto hover:scale-110 duration-300 cursor-pointer`}
             />
             <div className="space-y-2 text-center">
               <h2 className="text-2xl text-primary font-bold">
                 {service.title}
               </h2>
-              <p className="text-darkGray">Image by freepik</p>
               <p className="text-darkGray">{service.description}</p>
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
 import BgImage from "../../assets/bg-slate.png";
-import HeroImage from "../../assets/hero-image.png";
+import HeroImage from "../../assets/tea-hot-icon.svg";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -65,7 +65,7 @@ function Hero() {
               </motion.div>
             </div>
             {/* hero image section */}
-            <div className="relative md:top-[150px] md:left-[20px]">
+            <div className="relative md:top-[150px] md:left-[5px]">
               <motion.img
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -90,9 +90,7 @@ function Hero() {
                 }}
                 className="h-[180px] w-[180px] z-10 border-[20px] absolute top-0 right-10 md:-top-28 md:-right-16 border-primary rounded-full"
               ></motion.div>
-              <p className="md:translate-y-10 -translate-y-14 translate-x-4 text-gray-500 ">
-                Image by freepik
-              </p>
+
               <div className="absolute -top-[330px] left-80 md:-left-20 md:-top-[300px] lg:-top-[320px] lg:left-[200px] z-[1]">
                 <motion.h2
                   initial={{ opacity: 0, y: 100 }}
