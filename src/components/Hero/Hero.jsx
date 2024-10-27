@@ -77,7 +77,7 @@ function Hero() {
                 }}
                 src={HeroImage}
                 alt="hero"
-                className="relative z-40 img-shadow object-contain md:w-full w-[60%] left-20 md:left-0"
+                className="relative z-40 img-shadow object-contain md:w-full w-[50%] left-20 md:left-0"
               />
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
@@ -88,7 +88,7 @@ function Hero() {
                   damping: 10,
                   delay: 1.6,
                 }}
-                className="h-[180px] w-[180px] z-10 border-[20px] absolute top-0 right-10 md:-top-28 md:-right-16 border-primary rounded-full"
+                className="h-[100px] w-[100px] border-[14px] md:h-[180px] md:w-[180px] z-10 md:border-[20px] absolute top-0 right-10 md:-top-28 md:-right-16 border-primary rounded-full"
               ></motion.div>
 
               <div className="absolute -top-[330px] left-80 md:-left-20 md:-top-[300px] lg:-top-[320px] lg:left-[200px] z-[1]">
