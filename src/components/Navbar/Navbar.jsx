@@ -1,6 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 
+// eslint-disable-next-line react/prop-types
 function Navbar({ sidebarIsOpen, setSidebarIsOpen }) {
   return (
     <nav className="absolute z-40 top-0 left-0 w-full text-white pt-10">
@@ -33,7 +34,6 @@ function Navbar({ sidebarIsOpen, setSidebarIsOpen }) {
           >
             <GiHamburgerMenu className="text-3xl cursor-pointer" />
           </motion.div>
-          {/* hamburger */}
         </div>
       </div>
     </nav>

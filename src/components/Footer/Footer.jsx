@@ -77,21 +77,21 @@ function Footer() {
                 whileTap={{ scale: 0.9 }}
                 className="bg-white p-2 rounded-full"
               >
-                <FaFacebook className="text-primary text-2xl" />
+                <FaFacebook className="text-primary text-2xl cursor-pointer" />
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="bg-white p-2 rounded-full"
               >
-                <FaInstagram className="text-primary text-2xl" />
+                <FaInstagram className="text-primary text-2xl cursor-pointer" />
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="bg-white p-2 rounded-full"
               >
-                <FaGoogle className="text-primary text-2xl" />
+                <FaGoogle className="text-primary text-2xl cursor-pointer" />
               </motion.div>
             </div>
           </motion.div>
